@@ -32,6 +32,8 @@
 		DD0270BE24EA1A7F0048D541 /* destination.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD0270BD24EA1A7C0048D541 /* destination.png */; };
 		DD0270C124EA2F0A0048D541 /* Level2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD0270BF24EA2F0A0048D541 /* Level2.cpp */; };
 		DD0270C724EA30BC0048D541 /* Level3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD0270C524EA30BC0048D541 /* Level3.cpp */; };
+		DD0270CA24EA34670048D541 /* Level4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD0270C824EA34670048D541 /* Level4.cpp */; };
+		DD0270CD24EA35050048D541 /* Level5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD0270CB24EA35050048D541 /* Level5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +96,10 @@
 		DD0270C024EA2F0A0048D541 /* Level2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
 		DD0270C524EA30BC0048D541 /* Level3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level3.cpp; sourceTree = "<group>"; };
 		DD0270C624EA30BC0048D541 /* Level3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level3.h; sourceTree = "<group>"; };
+		DD0270C824EA34670048D541 /* Level4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level4.cpp; sourceTree = "<group>"; };
+		DD0270C924EA34670048D541 /* Level4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level4.h; sourceTree = "<group>"; };
+		DD0270CB24EA35050048D541 /* Level5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level5.cpp; sourceTree = "<group>"; };
+		DD0270CC24EA35050048D541 /* Level5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level5.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,10 @@
 				DD0270C024EA2F0A0048D541 /* Level2.h */,
 				DD0270C524EA30BC0048D541 /* Level3.cpp */,
 				DD0270C624EA30BC0048D541 /* Level3.h */,
+				DD0270C824EA34670048D541 /* Level4.cpp */,
+				DD0270C924EA34670048D541 /* Level4.h */,
+				DD0270CB24EA35050048D541 /* Level5.cpp */,
+				DD0270CC24EA35050048D541 /* Level5.h */,
 			);
 			path = SDLProject;
 			sourceTree = "<group>";
@@ -235,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0270CA24EA34670048D541 /* Level4.cpp in Sources */,
 				DD0270AD24EA09D20048D541 /* Level0.cpp in Sources */,
 				DD0270AA24EA093B0048D541 /* Scene.cpp in Sources */,
 				DBDF1B532323DE3F007CECB1 /* main.cpp in Sources */,
+				DD0270CD24EA35050048D541 /* Level5.cpp in Sources */,
 				DB4C61FB236CE8FD0096309D /* Entity.cpp in Sources */,
 				DD0270C724EA30BC0048D541 /* Level3.cpp in Sources */,
 				DD0270B024EA0A100048D541 /* Level1.cpp in Sources */,

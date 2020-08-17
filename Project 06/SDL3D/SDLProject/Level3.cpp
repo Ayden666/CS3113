@@ -70,7 +70,7 @@ void Level3:: Initialize()
     GLuint destinationTextureID = Util::LoadTexture("destination.png");
     state.destination->billboard = true;
     state.destination->textureID = destinationTextureID;
-    state.destination->position = glm::vec3(15, 0.5, 15);
+    state.destination->position = glm::vec3(15, 0.5, -15);
     state.destination->entityType = DEST3;
 }
 

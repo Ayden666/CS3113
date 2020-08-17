@@ -1,4 +1,4 @@
-#include "Level2.h"
+#include "Level4.h"
 #include "Util.h"
 #include <SDL_mixer.h>
 
@@ -7,7 +7,7 @@
 #define OBJECT_COUNT 10
 #define ENEMY_COUNT 5
 
-void Level2:: Initialize()
+void Level4:: Initialize()
 {
     state.nextScene = -1;
     state.lives = 3;
@@ -60,21 +60,21 @@ void Level2:: Initialize()
         state.enemies[i].entityType = ENEMY;
     }
     
-    state.enemies[0].position = glm::vec3(-15, 0.5, -15);
-    state.enemies[1].position = glm::vec3(13, 0.5, 13);
-    state.enemies[2].position = glm::vec3(-11, 0.5, 11);
-    state.enemies[3].position = glm::vec3(13, 0.5, -15);
-    state.enemies[4].position = glm::vec3(-12, 0.5, -13);
+    state.enemies[0].position = glm::vec3(-15, 0.5, -14);
+    state.enemies[1].position = glm::vec3(-12, 0.5, -13);
+    state.enemies[2].position = glm::vec3(10, 0.5, 12);
+    state.enemies[3].position = glm::vec3(12, 0.5, -11);
+    state.enemies[4].position = glm::vec3(-11, 0.5, -13);
     
     state.destination = new Entity();
     GLuint destinationTextureID = Util::LoadTexture("destination.png");
     state.destination->billboard = true;
     state.destination->textureID = destinationTextureID;
-    state.destination->position = glm::vec3(-15, 0.5, 15);
-    state.destination->entityType = DEST2;
+    state.destination->position = glm::vec3(-15, 0.5, -15);
+    state.destination->entityType = DEST4;
 }
 
-void Level2::Update(float deltaTime)
+void Level4::Update(float deltaTime)
 {
     state.floor->Update(deltaTime, state.player, state.objects, OBJECT_COUNT, state.enemies, ENEMY_COUNT, &(state.success), &(state.failure), &(state.lives), &(state.nextScene), state.destination);
     
@@ -93,7 +93,7 @@ void Level2::Update(float deltaTime)
     state.player->Update(deltaTime, state.player, state.objects, OBJECT_COUNT, state.enemies, ENEMY_COUNT, &(state.success), &(state.failure), &(state.lives), &(state.nextScene), state.destination);
 }
 
-void Level2::Render(ShaderProgram *program)
+void Level4::Render(ShaderProgram *program)
 {
     //state.player->Render(&program);
     

@@ -21,6 +21,8 @@
 #include "Level1.h"
 #include "Level2.h"
 #include "Level3.h"
+#include "Level4.h"
+#include "Level5.h"
 
 SDL_Window* displayWindow;
 bool gameIsRunning = true;
@@ -30,7 +32,7 @@ glm::mat4 viewMatrix, modelMatrix, projectionMatrix;
 GLuint fontTextureID;
 
 Scene* currentScene;
-Scene* sceneList[4];
+Scene* sceneList[6];
 
 Mix_Chunk* successSound;
 Mix_Chunk* failureSound;
@@ -82,6 +84,8 @@ void Initialize() {
     sceneList[1] = new Level1();
     sceneList[2] = new Level2();
     sceneList[3] = new Level3();
+    sceneList[4] = new Level4();
+    sceneList[5] = new Level5();
     SwitchToScene(sceneList[0], 3);
     
     successSound = Mix_LoadWAV("success.wav");

@@ -98,6 +98,14 @@ void Entity::Update(float deltaTime, Entity *player, Entity *objects, int object
             }
             else if (destination->entityType == DEST3)
             {
+                (*nextScene) = 4;
+            }
+            else if (destination->entityType == DEST4)
+            {
+                (*nextScene) = 5;
+            }
+            else if (destination->entityType == DEST5)
+            {
                 *success = true;
             }
         }
